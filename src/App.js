@@ -24,7 +24,7 @@ export default function App() {
       <br />
       <br />
       <SearchInput />
-      <UserCard />
+      <UserCard user={user} />
     </div>
   );
 }

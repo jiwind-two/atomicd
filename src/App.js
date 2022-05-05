@@ -20,12 +20,14 @@ const user = {
 
 export default function App() {
   return (
-    <HeaderOnly>
-      <PrimaryButton>テスト</PrimaryButton>
-      <SecondaryButton>検索</SecondaryButton>
-      <br />
-      <SearchInput />
-      <UserCard user={user} />
-    </HeaderOnly>
+    <BrowserRouter>
+      <HeaderOnly>
+        <PrimaryButton>テスト</PrimaryButton>
+        <SecondaryButton>検索</SecondaryButton>
+        <br />
+        <SearchInput />
+        <UserCard user={user} />
+      </HeaderOnly>
+    </BrowserRouter>
   );
 }

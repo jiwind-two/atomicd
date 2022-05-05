@@ -3,7 +3,6 @@ import { PrimaryButton } from "./components/atoms/button/PrimaryButton";
 import { SecondaryButton } from "./components/atoms/button/SecondaryButton";
 import { SearchInput } from "./components/molecules/SearchInput";
 import { UserCard } from "./components/organisms/user/UserCard";
-import { HedderOnly } from "./components/templates/HedderOnly";
 import "./styles.css";
 
 const user = {
@@ -20,15 +19,12 @@ const user = {
 
 export default function App() {
   return (
-    <BrowserRouter>
-      <HedderOnly className="App">
-        <PrimaryButton>テスト</PrimaryButton>
-        <SecondaryButton>検索</SecondaryButton>
-        <br />
-        <br />
-        <SearchInput />
-        <UserCard user={user} />
-      </HedderOnly>
-    </BrowserRouter>
+    <div>
+      <PrimaryButton>テスト</PrimaryButton>
+      <SecondaryButton>検索</SecondaryButton>
+      <br />
+      <SearchInput />
+      <UserCard user={user} />
+    </div>
   );
 }
